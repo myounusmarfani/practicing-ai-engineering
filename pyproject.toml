@@ -1,0 +1,19 @@
+[project]
+name = "1-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Younus", email = "myounushere@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.142.2",
+]
+
+[project.scripts]
+1-python = "1_python:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
